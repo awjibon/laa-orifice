@@ -6,9 +6,7 @@ matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import scipy.ndimage as nimg
 from numba import njit
-import tensorflow.compat.v1 as tf  # tf.__version__: 1.12.0
-
-tf.disable_v2_behavior()
+import tensorflow as tf  # tf.__version__: 1.12.0
 
 from skimage.feature import peak_local_max
 from skimage.segmentation import watershed
